@@ -1,11 +1,14 @@
 package com.selfstudy.selfstudy;
 
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import fragments.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
         initializeViews();
         setSupportActionBar(mToolbar);
+
+        defaultFragmentTransaction();
 
     }
 
@@ -41,8 +46,19 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+    /*@Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        return true;
+    }*/
+
     private void initializeViews(){
         mToolbar = findViewById(R.id.toolbar);
+    }
 
+    private void defaultFragmentTransaction(){
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.ll_window, new HomeFragment()).commit();
     }
 }

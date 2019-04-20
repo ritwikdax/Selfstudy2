@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <item android:title="Achievements"
+    <item android:title="Wallet"
         android:id="@+id/menu_wallet"
         android:icon="@drawable/ic_wallet"
         app:showAsAction="always"/>
@@ -11,7 +11,7 @@
     <item android:title="Achievements"
         android:id="@+id/menu_achievements"
         android:icon="@drawable/ic_achievement"
-        app:showAsAction="always"/>
+        app:showAsAction="always" />
 
 
 

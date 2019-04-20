@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily" >@font/quicksand_regular</item>
 
     </style>
 
@@ -19,6 +20,19 @@
         <item name="android:fontFamily" >@font/quicksand_medium</item>
 
 
+    </style>
+
+    <style name="RegulrText" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
+        <item name="android:textColor">@color/textColor</item>
+
+    </style>
+
+    <style name="BigButton" parent="AppTheme">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/bg_shape_big_button</item>
+        <item name="android:fontFamily">@font/quicksand_medium</item>
     </style>
 
 

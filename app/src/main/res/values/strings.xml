@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Selfstudy</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_test">Test</string>
+    <string name="menu_analysis">ANALYSIS</string>
+    <string name="menu_doubts">DOUBTS</string>
+    <string name="menu_profile">PROFILE</string>
+    <string name="iv_ad_desc">This is an ad</string>
 </resources>
