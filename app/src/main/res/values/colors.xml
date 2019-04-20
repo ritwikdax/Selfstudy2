@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bcd4</color>
+    <color name="colorPrimaryDark">#0097a7</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="greyBackground">#e6e4e5</color>
+    <color name="btnBackground">#22c064</color>
+    <color name="progressbarBackground">#b6e9f5</color>
+    <color name="textHighlight">#00b8d2</color>
+    <color name="iconBackground">#eef8ff</color>
+    <color name="btmNavBackground">#00bcd4</color>
+
+</resources>

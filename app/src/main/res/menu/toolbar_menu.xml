@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="Achievements"
+        android:id="@+id/menu_wallet"
+        android:icon="@drawable/ic_wallet"
+        app:showAsAction="always"/>
+
+    <item android:title="Achievements"
+        android:id="@+id/menu_achievements"
+        android:icon="@drawable/ic_achievement"
+        app:showAsAction="always"/>
+
+
+
+</menu>
