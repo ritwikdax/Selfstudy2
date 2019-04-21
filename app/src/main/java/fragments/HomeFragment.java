@@ -77,6 +77,7 @@ public class HomeFragment extends Fragment {
         //recyclerview
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
+        recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setAdapter(adapter);
 
 
