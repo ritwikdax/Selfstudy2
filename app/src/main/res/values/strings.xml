@@ -5,5 +5,9 @@
     <string name="menu_analysis">ANALYSIS</string>
     <string name="menu_doubts">DOUBTS</string>
     <string name="menu_profile">PROFILE</string>
+
+
     <string name="iv_ad_desc">This is an ad</string>
+    <string name="upgrade_now">UPGRADE NOW</string>
+    <string name="progress">Progress</string>
 </resources>
