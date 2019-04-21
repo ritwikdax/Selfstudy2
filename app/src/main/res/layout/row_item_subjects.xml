@@ -68,6 +68,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:max="100"
             android:progressDrawable="@drawable/bg_shape_progress_drawable"
             app:layout_constraintEnd_toStartOf="@+id/tv_row_proPer"
             app:layout_constraintStart_toEndOf="@+id/tv_row_p"

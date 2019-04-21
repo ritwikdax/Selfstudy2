@@ -37,21 +37,24 @@ public class SubjectsAdapter extends RecyclerView.Adapter<SubjectsAdapter.SubVie
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final SubjectsAdapter.SubViewHolder subViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final SubjectsAdapter.SubViewHolder subViewHolder, int i) {
         Subject subject = mSubList.get(i);
-        String progress = String.valueOf((int)subject.getProgressPersent()) + "%";
+        float progress = subject.getProgressPersent();
+
+        if (isAnInt(progress)){
+            String progressVal = (int)(progress) + "%";
+            subViewHolder.progressPer.setText(progressVal);
+        }
+        else {
+            String progressVala = progress + "%";
+            subViewHolder.progressPer.setText(progressVala);
+        }
+
 
         subViewHolder.subName.setText(subject.getSubjectName());
         subViewHolder.subIcon.setImageResource(subject.getSubIcon());
-        subViewHolder.progressPer.setText(progress);
         subViewHolder.subProgress.setProgress((int) subject.getProgressPersent());
 
-        subViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                subjectItemClickListener.onSubjectItemClicked(subViewHolder.getAdapterPosition() );
-            }
-        });
     }
 
     @Override
@@ -72,10 +75,26 @@ public class SubjectsAdapter extends RecyclerView.Adapter<SubjectsAdapter.SubVie
             subName = itemView.findViewById(R.id.tv_row_subName);
             progressPer = itemView.findViewById(R.id.tv_row_proPer);
             subProgress = itemView.findViewById(R.id.pb_row_progress);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    subjectItemClickListener.onSubjectItemClicked(getAdapterPosition());
+                }
+            });
         }
     }
 
     public void setOnSubjectItemClickListener(SubjectItemClickListener listener){
         this.subjectItemClickListener = listener;
     }
+
+    private boolean isAnInt(float num){
+        if (Math.floor(num)== num){
+            return true;
+        }
+        return false;
+
+    }
+
 }

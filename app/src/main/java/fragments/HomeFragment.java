@@ -86,16 +86,16 @@ public class HomeFragment extends Fragment {
 
         mSubLists= new ArrayList<>();
 
-        Subject ma = new Subject("Mental Ability",10, R.drawable.ic_mental_ability );
+        Subject ma = new Subject("Mental Ability",0f, R.drawable.ic_mental_ability );
         mSubLists.add(ma);
 
-        Subject ph = new Subject("Physics",0, R.drawable.ic_physics);
+        Subject ph = new Subject("Physics",0f, R.drawable.ic_physics);
         mSubLists.add(ph);
 
-        Subject chem = new Subject("Chemistry",40, R.drawable.ic_chemistry);
+        Subject chem = new Subject("Chemistry",0.71f, R.drawable.ic_chemistry);
         mSubLists.add(chem);
 
-        Subject math = new Subject("Math",0, R.drawable.ic_physics);
+        Subject math = new Subject("Math",0f, R.drawable.ic_physics);
         mSubLists.add(math);
 
         mSubLists.add(ma);
